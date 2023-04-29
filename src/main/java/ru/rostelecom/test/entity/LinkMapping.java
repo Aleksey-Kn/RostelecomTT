@@ -1,4 +1,4 @@
-package ru.rostelecom.test.dto;
+package ru.rostelecom.test.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

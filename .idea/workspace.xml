@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Создан проект">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/RedirectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LinkMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/exceptions/LongLinkNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/repositories/LinkMappingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/services/LinkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init_links_mapping.sql" afterDir="false" />
+    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Сервис реализован в соответствии с техническим заданием">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LongLinkResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpringStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/SpringStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/RedirectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/RedirectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LinkMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/entity/LinkMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/repositories/LinkMappingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/repositories/LinkMappingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/services/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/services/LinkService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "2727714cdadb3586fd3e1b9419a85ff2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -103,7 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1682711396264</updated>
       <workItem from="1682711398110" duration="207000" />
-      <workItem from="1682749060918" duration="19561000" />
+      <workItem from="1682749060918" duration="19745000" />
+      <workItem from="1682789226708" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект">
       <created>1682711602973</created>
@@ -112,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682711602974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Сервис реализован в соответствии с техническим заданием">
+      <created>1682778025758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682778025758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создан проект" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан проект" />
+    <MESSAGE value="Сервис реализован в соответствии с техническим заданием" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сервис реализован в соответствии с техническим заданием" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import ru.rostelecom.test.dto.LongLinkResponse;
 import ru.rostelecom.test.exceptions.LongLinkNotFoundException;
 import ru.rostelecom.test.services.LinkService;
 
@@ -18,7 +19,7 @@ public class RedirectController {
     void longURLNotFoundExceptionHandler() {}
 
     @GetMapping("/{shortLink}")
-    public String findLongLinkFromShort(@PathVariable String shortLink) {
+    public LongLinkResponse findLongLinkFromShort(@PathVariable String shortLink) {
         log.info("Get short link: ".concat(shortLink));
         return linkService.findLongLinkFromShort(shortLink);
     }

@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Сервис реализован в соответствии с техническим заданием">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LongLinkResponse.java" afterDir="false" />
+    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Установлены более корректные настройки gitignore">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/RedirectControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/MySqlInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/services/LinkServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/RedirectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/RedirectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LinkMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/entity/LinkMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/repositories/LinkMappingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/repositories/LinkMappingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/services/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/services/LinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -42,6 +43,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,13 +64,28 @@
       <recent name="D:\userData\projects\RostelecomTT" />
       <recent name="D:\userData\projects\RostelecomTT\src\main\resources\db" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.rostelecom.test.controllers" />
+      <recent name="ru.rostelecom.test.services" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SpringStarter">
+  <component name="RunManager" selected="JUnit.All in RostelecomTT">
     <configuration name="SpringStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ru.rostelecom.test.SpringStarter" />
       <module name="RostelecomTT" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RostelecomTT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RostelecomTT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,10 +99,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.SpringStarter" />
+      <item itemvalue="JUnit.All in RostelecomTT" />
       <item itemvalue="Spring Boot.SpringStarter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in RostelecomTT" />
         <item itemvalue="Application.SpringStarter" />
       </list>
     </recent_temporary>
@@ -99,7 +119,8 @@
       <updated>1682711396264</updated>
       <workItem from="1682711398110" duration="207000" />
       <workItem from="1682749060918" duration="19745000" />
-      <workItem from="1682789226708" duration="358000" />
+      <workItem from="1682789226708" duration="564000" />
+      <workItem from="1682837198599" duration="2325000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект">
       <created>1682711602973</created>
@@ -115,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682778025758</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Реализован возврат DTO со ссылкой вместо возврата строки">
+      <created>1682789704887</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682789704887</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Установлены более корректные настройки gitignore">
+      <created>1682789788519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682789788519</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +170,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создан проект" />
     <MESSAGE value="Сервис реализован в соответствии с техническим заданием" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сервис реализован в соответствии с техническим заданием" />
+    <MESSAGE value="Реализован возврат DTO со ссылкой вместо возврата строки" />
+    <MESSAGE value="Установлены более корректные настройки gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Установлены более корректные настройки gitignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

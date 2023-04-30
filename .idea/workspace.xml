@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Выполнен рефакторинг проекта">
+    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Работа с path изменена на работу с параметрами">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/LinkMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/LinkMappingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/entity/LinkMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/entity/LinkMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init_links_mapping.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init_links_mapping.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/LinkMappingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/LinkMappingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LongLinkResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LongLinkResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
       <recent name="ru.rostelecom.test.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid">
+  <component name="RunManager" selected="Spring Boot.SpringStarter">
     <configuration name="All in RostelecomTT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RostelecomTT" />
       <option name="PACKAGE_NAME" value="" />
@@ -186,7 +182,7 @@
       <workItem from="1682711398110" duration="207000" />
       <workItem from="1682749060918" duration="19745000" />
       <workItem from="1682789226708" duration="564000" />
-      <workItem from="1682837198599" duration="11221000" />
+      <workItem from="1682837198599" duration="13947000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект">
       <created>1682711602973</created>
@@ -237,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682869561258</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Работа с path изменена на работу с параметрами">
+      <created>1682872212456</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682872212457</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +265,8 @@
     <MESSAGE value="Добавлены тесты на сервис и контроллер" />
     <MESSAGE value="Добавлена документация" />
     <MESSAGE value="Выполнен рефакторинг проекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнен рефакторинг проекта" />
+    <MESSAGE value="Работа с path изменена на работу с параметрами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с path изменена на работу с параметрами" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

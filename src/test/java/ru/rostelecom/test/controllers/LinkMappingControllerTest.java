@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @AutoConfigureMockMvc
-class RedirectControllerTest extends BaseTest {
+class LinkMappingControllerTest extends BaseTest {
     @Autowired
     private MockMvc mockMvc;
 

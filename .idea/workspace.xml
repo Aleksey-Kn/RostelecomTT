@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Установлены более корректные настройки gitignore">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/RedirectControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/MySqlInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/services/LinkServiceTest.java" afterDir="false" />
+    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Добавлены тесты на сервис и контроллер">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/RedirectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/LinkMappingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/RedirectControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/LinkMappingControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -72,7 +74,7 @@
       <recent name="ru.rostelecom.test.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in RostelecomTT">
+  <component name="RunManager" selected="Spring Boot.SpringStarter">
     <configuration name="SpringStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -120,7 +122,7 @@
       <workItem from="1682711398110" duration="207000" />
       <workItem from="1682749060918" duration="19745000" />
       <workItem from="1682789226708" duration="564000" />
-      <workItem from="1682837198599" duration="2325000" />
+      <workItem from="1682837198599" duration="7347000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект">
       <created>1682711602973</created>
@@ -150,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682789788519</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавлены тесты на сервис и контроллер">
+      <created>1682840064666</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682840064666</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +181,8 @@
     <MESSAGE value="Сервис реализован в соответствии с техническим заданием" />
     <MESSAGE value="Реализован возврат DTO со ссылкой вместо возврата строки" />
     <MESSAGE value="Установлены более корректные настройки gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Установлены более корректные настройки gitignore" />
+    <MESSAGE value="Добавлены тесты на сервис и контроллер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты на сервис и контроллер" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

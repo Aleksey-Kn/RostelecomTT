@@ -1,7 +1,7 @@
 create schema if not exists links_database;
 
 create table if not exists links_database.link_mapping (
-    short_url varchar(45) primary key not null,
+    short_url varchar(13) primary key not null,
     long_url varchar(255) not null
 );
 

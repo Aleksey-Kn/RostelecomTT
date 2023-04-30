@@ -11,7 +11,7 @@ import lombok.Getter;
 @Table(name = "link_mapping")
 public class LinkMapping {
     @Id
-    @Column(name = "short_url")
+    @Column(name = "short_url", length = 13)
     private String shortURL;
 
     @Column(name = "long_url")

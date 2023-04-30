@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Добавлена документация">
+    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Выполнен рефакторинг проекта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/SpringStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/SpringStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/LinkMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/controllers/LinkMappingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/entity/LinkMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/entity/LinkMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init_links_mapping.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init_links_mapping.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/LinkMappingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/controllers/LinkMappingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/services/LinkServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/services/LinkServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/rostelecom/test/init/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,20 +77,75 @@
       <recent name="ru.rostelecom.test.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in RostelecomTT">
-    <configuration name="SpringStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ru.rostelecom.test.SpringStarter" />
-      <module name="RostelecomTT" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid">
     <configuration name="All in RostelecomTT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RostelecomTT" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RostelecomTT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.rostelecom.test.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.rostelecom.test.controllers" />
+      <option name="MAIN_CLASS_NAME" value="ru.rostelecom.test.controllers.LinkMappingControllerTest" />
+      <option name="METHOD_NAME" value="findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkMappingControllerTest.findLongLinkFromShortShouldWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RostelecomTT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.rostelecom.test.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.rostelecom.test.controllers" />
+      <option name="MAIN_CLASS_NAME" value="ru.rostelecom.test.controllers.LinkMappingControllerTest" />
+      <option name="METHOD_NAME" value="findLongLinkFromShortShouldWork(org.springframework.boot.test.system.CapturedOutput)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkMappingControllerTest.findLongLinkFromShortWithCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RostelecomTT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.rostelecom.test.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.rostelecom.test.controllers" />
+      <option name="MAIN_CLASS_NAME" value="ru.rostelecom.test.controllers.LinkMappingControllerTest" />
+      <option name="METHOD_NAME" value="findLongLinkFromShortWithCorrectValue(org.springframework.boot.test.system.CapturedOutput)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkMappingControllerTest.findLongLinkFromShortWithNotExistValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RostelecomTT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.rostelecom.test.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.rostelecom.test.controllers" />
+      <option name="MAIN_CLASS_NAME" value="ru.rostelecom.test.controllers.LinkMappingControllerTest" />
+      <option name="METHOD_NAME" value="findLongLinkFromShortWithNotExistValue(org.springframework.boot.test.system.CapturedOutput)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,14 +158,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SpringStarter" />
       <item itemvalue="JUnit.All in RostelecomTT" />
+      <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid" />
+      <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldWork" />
+      <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithCorrectValue" />
+      <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithNotExistValue" />
       <item itemvalue="Spring Boot.SpringStarter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid" />
+        <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithNotExistValue" />
+        <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldWork" />
+        <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithCorrectValue" />
         <item itemvalue="JUnit.All in RostelecomTT" />
-        <item itemvalue="Application.SpringStarter" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +186,7 @@
       <workItem from="1682711398110" duration="207000" />
       <workItem from="1682749060918" duration="19745000" />
       <workItem from="1682789226708" duration="564000" />
-      <workItem from="1682837198599" duration="8829000" />
+      <workItem from="1682837198599" duration="11221000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект">
       <created>1682711602973</created>
@@ -167,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682868114081</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Выполнен рефакторинг проекта">
+      <created>1682869561258</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682869561258</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +261,8 @@
     <MESSAGE value="Установлены более корректные настройки gitignore" />
     <MESSAGE value="Добавлены тесты на сервис и контроллер" />
     <MESSAGE value="Добавлена документация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена документация" />
+    <MESSAGE value="Выполнен рефакторинг проекта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнен рефакторинг проекта" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

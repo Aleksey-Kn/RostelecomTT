@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.validator.constraints.Length;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import ru.rostelecom.test.dto.LongLinkResponse;
@@ -36,8 +37,8 @@ public class LinkMappingController {
             }),
             @ApiResponse(responseCode = "400", description = "Указанной короткой ссылки не существует"),
     })
-    @GetMapping("/{shortLink}")
-    public LongLinkResponse findLongLinkFromShort(@PathVariable @NotBlank final String shortLink) {
+    @GetMapping("/")
+    public LongLinkResponse findLongLinkFromShort(@RequestParam("url") @NotBlank @Length(max = 13) final String shortLink) {
         log.info("Got a short link: %s".formatted(shortLink));
         return linkService.findLongLinkFromShort(shortLink);
     }

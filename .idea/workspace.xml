@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Работа с path изменена на работу с параметрами">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="9fc1d818-5a56-4d94-a1d8-e35d50f63553" name="Changes" comment="Добавлен README.md">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LongLinkResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rostelecom/test/dto/LongLinkResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,14 +74,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringStarter">
-    <configuration name="All in RostelecomTT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RostelecomTT" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RostelecomTT" />
       <extension name="coverage">
@@ -153,8 +145,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JUnit.All in RostelecomTT" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid" />
       <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldWork" />
       <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithCorrectValue" />
@@ -163,11 +164,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldReturnBadRequestIfShortUrlNotValid" />
         <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithNotExistValue" />
         <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortShouldWork" />
         <item itemvalue="JUnit.LinkMappingControllerTest.findLongLinkFromShortWithCorrectValue" />
-        <item itemvalue="JUnit.All in RostelecomTT" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,7 @@
       <workItem from="1682711398110" duration="207000" />
       <workItem from="1682749060918" duration="19745000" />
       <workItem from="1682789226708" duration="564000" />
-      <workItem from="1682837198599" duration="13947000" />
+      <workItem from="1682837198599" duration="15329000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект">
       <created>1682711602973</created>
@@ -240,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682872212457</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Добавлен README.md">
+      <created>1682874741136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682874741136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +274,8 @@
     <MESSAGE value="Добавлена документация" />
     <MESSAGE value="Выполнен рефакторинг проекта" />
     <MESSAGE value="Работа с path изменена на работу с параметрами" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с path изменена на работу с параметрами" />
+    <MESSAGE value="Добавлен README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

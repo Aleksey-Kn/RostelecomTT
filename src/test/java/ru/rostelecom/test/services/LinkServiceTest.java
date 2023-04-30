@@ -14,7 +14,8 @@ public class LinkServiceTest extends BaseTest {
 
     @Test
     void findLongLinkFromShortWithExistsShortLink() {
-        assertThat(service.findLongLinkFromShort("xxx").longLink()).isEqualTo("https://github.com/");
+        assertThat(service.findLongLinkFromShort("xxx").longLink())
+                .isEqualTo("https://github.com/");
     }
 
     @Test

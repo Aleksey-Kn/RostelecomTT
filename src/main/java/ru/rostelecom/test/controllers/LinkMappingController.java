@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import ru.rostelecom.test.dto.LongLinkResponse;
@@ -17,14 +17,16 @@ import ru.rostelecom.test.services.LinkService;
 
 @RestController
 @RequiredArgsConstructor
-@Log
+@Slf4j
 @Tag(name = "Конвертация ссылок")
 public class LinkMappingController {
     private final LinkService linkService;
 
     @ExceptionHandler(LongLinkNotFoundException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    void longURLNotFoundExceptionHandler() {}
+    void longURLNotFoundExceptionHandler() {
+        log.warn("Not found long link");
+    }
 
     @Operation(summary = "Конвертация короткой ссылки в длинную")
     @ApiResponses(value = {
@@ -35,8 +37,8 @@ public class LinkMappingController {
             @ApiResponse(responseCode = "400", description = "Указанной короткой ссылки не существует"),
     })
     @GetMapping("/{shortLink}")
-    public LongLinkResponse findLongLinkFromShort(@PathVariable @NotBlank String shortLink) {
-        log.info("Get short link: ".concat(shortLink));
+    public LongLinkResponse findLongLinkFromShort(@PathVariable @NotBlank final String shortLink) {
+        log.info("Got a short link: %s".formatted(shortLink));
         return linkService.findLongLinkFromShort(shortLink);
     }
 }

@@ -12,7 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.rostelecom.test.dto.LongLinkResponse;
+import org.springframework.web.servlet.view.RedirectView;
+import ru.rostelecom.test.dto.ShortLinkDto;
 import ru.rostelecom.test.exceptions.LongLinkNotFoundException;
 import ru.rostelecom.test.services.LinkService;
 
@@ -25,21 +26,29 @@ public class LinkMappingController {
 
     @ExceptionHandler(LongLinkNotFoundException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    void longURLNotFoundExceptionHandler() {
-        log.warn("Not found long link");
+    void longURLNotFoundExceptionHandler(final LongLinkNotFoundException e) {
+        log.warn(e.getMessage());
     }
 
     @Operation(summary = "Конвертация короткой ссылки в длинную")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Короткая ссылка конвертирована в длинную", content = {
-                    @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = LongLinkResponse.class))
-            }),
+            @ApiResponse(responseCode = "302", description = "Выполнен редирект по длинной ссылке"),
             @ApiResponse(responseCode = "400", description = "Указанной короткой ссылки не существует"),
     })
     @GetMapping("/")
-    public LongLinkResponse findLongLinkFromShort(@RequestParam("url") @NotBlank @Length(max = 13) final String shortLink) {
+    public RedirectView findLongLinkFromShort(@RequestParam("url") @NotBlank @Length(max = 13) final String shortLink) {
         log.info("Got a short link: %s".formatted(shortLink));
-        return linkService.findLongLinkFromShort(shortLink);
+        return new RedirectView(linkService.findLongLinkFromShort(shortLink));
+    }
+
+    @Operation(summary = "Создание короткой ссылки")
+    @ApiResponse(responseCode = "200", description = "Создана короткая ссылка", content = {
+            @Content(mediaType = "application/json",
+                    schema = @Schema(implementation = ShortLinkDto.class))
+    })
+    @GetMapping("/create")
+    public ShortLinkDto createShortLink(@RequestParam("url") final String longLink) {
+        log.info("Got a long link: %s".formatted(longLink));
+        return linkService.createShortLink(longLink);
     }
 }

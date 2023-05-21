@@ -2,10 +2,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.OracleDialect
     open-in-view: false
+    database: oracle
   datasource:
-    url: jdbc:mysql://localhost:3306/links_database
-    username: al
-    password: aladmin
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:oracle:thin:@//DESKTOP-LG1EAKI.mshome.net:1521/xe
+    username: system
+    password: root
+    driver-class-name: oracle.jdbc.OracleDriver
+
+server-host: http://localhost:8080
